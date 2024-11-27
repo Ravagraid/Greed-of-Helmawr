@@ -1,37 +1,99 @@
 \documentclass[a4paper]{article}
-\usepackage{titlesec}
 \usepackage[fontsize=10pt]{fontsize}
 \usepackage{parskip}
 \usepackage[nohead, nomarginpar, margin=1in, foot=.25in]{geometry}
+\usepackage{tabularray}
+\usepackage{multicol}
 
-\titleformat{\section}
-	{\normalfont\Large\bfseries} 	% The style of the section title
-	{}								% a prefix
-	{0pt}							% How much space exists between the prefix and the title
- 	{}								% How the section is represented
+\setlength{\parskip}{\baselineskip}%
+\setlength\columnseprule{.5pt}
 
  	\title{Greed Of Helmawr}
  	\author{}
  	\date{}
+ 	\pagenumbering{arabic}
 
 \begin{document}
 	\maketitle
-	\section{Overview}
+	\section*{Overview}
 	\textbf{Start date: 02/09/24}
-
-	3 Cycles for Expansion, Downtime 1 week, 3 Cycles for Takeover
-
-	Each Cycle is five weeks of time; four weeks for gaming, and one for preparing for the next Cycle.
 
 	This is a Law \& Misrule campaign as defined in the Book Of Judgement, with the following exceptions;
 	\begin{itemize}
-	 \item No Brutes.
-	 \item No Vehicles.
-	 \item No unique characters (Dramatis Personae).
-	 \item No Alliances.
-	 \item Steps 5 (Post-Battle Actions) and 6B (Visit the Trading Post) of the post-battle sequence may only be done at the end of the cycle.
-	 \item Each player starts with 1 Settlement which cannot be lost or traded. This is instead of the usual 2 Rackets they would otherwise have.
+		\item No Brutes.
+		\item No Vehicles.
+		\item No unique characters (Dramatis Personae).
+		\item No Alliances.
+		\item Steps 5 (Post-Battle Actions) and 6B (Visit the Trading Post) of the post-battle sequence may only be undertaken during the post-battle of the players last match for the Cycle.
+		\item Each player starts with 1 Settlement which cannot be lost or traded. This is instead of the usual 2 Rackets they would otherwise have.
 	\end{itemize}
+	The following is a table of gangs that are approved for use in this campaign. Gangs marked with an asterisk are approved at the discretion of the Arbitrator.
 
+
+	\begin{tabular}{c c c c}
+		House Gangs    & Enforcers          & Cults             & Others \& Outsiders        \\
+		\hline
+		\rule{0pt}{3ex}
+		House Cawdor   	& Palanite Enforcers & Corpse Grinders   & Ash Waste Nomads           \\
+		House Delaque  	& Badzone Enforcers  & Genestealer Cults & Ironhead Squat Prospectors \\
+		House Escher   	&                    & Helot Chaos Cults & Underhive Outcasts*        \\
+		House Goliath  	&                    &                   & Slave Ogryns               \\
+		House Orlock   	&                    &                   & Venators*                  \\
+		House Van Saar 	&                    &                   & Spyre Hunters              \\
+						&                    &                   & Malstrain Genestealers
+	\end{tabular}
+	\pagebreak
+	\section*{Campaign Layout}
+	The Law and Misrule Campaign is based around gangs fighting battles for the control of Rackets in their area of the hive. Each game in the campaign is fought for the control of a Racket, with the winner either gaining a new Racket, or holding onto one that they already have. In this campaign, there are a fixed number of Rackets, based on the number of players.
+
+	\subsection*{The Rule of Law, and the Path of the Outlaw}
+	At the start of the campaign, each gang must declare their alignment, and note it down on their roster. The alignment of a gang can change over the course of the campaign as a consequence of actions and choices made by the player of the gang. The table below details the alignment of the different gangs and how they may change:
+
+	\begin{center}
+	\begin{tblr}{
+		cell{2}{1} = {r=2}{},
+		cell{5}{1} = {r=2}{},
+		cell{8}{1} = {r=2}{},
+		cell{11}{1} = {r=2}{},
+		cell{13}{1} = {r=2}{},
+		hline{2,4-5,7-8,10-11,13,15} = {1-3}{},
+	}
+		\textbf{Gang Type}				& \textbf{Starting Alignment} & \textbf{Switched Alignment} &  \\
+		All House Gangs 				& Law Abiding                 & Outlaw                      &  \\
+										& Outlaw                      & Law Abiding                 &  \\
+		{Chaos and\\Corpse Grinders} 	& Outlaw                      & N/A                         &  \\
+		Genestealer Cults				& Law Abiding                 & Outlaw                      &  \\
+										& Outlaw                      & Law Abiding                 &  \\
+		Enforcers						& Law Abiding                 & N/A                         &  \\
+		Badzone Enforcers				& Law Abiding                 & Outlaw                      &  \\
+										& Outlaw                      & Law Abiding                 &  \\
+		Ash Waste Nomads				& Outlaw                      & N/A                         &  \\
+		Ironhead Squats					& Law Abiding                 & Outlaw                      &  \\
+										& Outlaw                      & Law Abiding                 &  \\
+		Venator Bands 					& Law Abiding                 & Outlaw                      &  \\
+										& Outlaw                      & Law Abiding                 &  \\
+		Spyre Hunting Parties			& N/A                         & N/A                         &
+	\end{tblr}
+	\end{center}
+	\vspace{1em}
+	\begin{multicols}{2}
+		\subsubsection*{Effects of being a Law Abiding Gang}
+		\begin{itemize}
+			\item Law Abiding gangs may claim bounties on captured Outlaw fighters, equal to their full value. This is after a Rescue Mission has been attempted.
+			\item Law Abiding Gangs may trade captives with other Law Abiding gangs, but not with Outlaw gangs.
+			\item Law Abiding gangs may hire Hangers-on, Brutes, or Hired guns that do not have the Outlaw rule.
+			\item Law Abiding gangs may purchase items that are Illegal with a -4 Availability modifier.
+		\end{itemize}
+
+		\columnbreak
+
+		\subsubsection*{Efects of being an Outlaw Gang}
+		\begin{itemize}
+			\item Outlaw gangs cannot claim bounties or sell captives, but they can dispose of them (removing them from the campaign). This is after a Rescue Mission has been attempted.
+			\item Outlaw gangs may trade captives with any other gang.
+			\item Outlaw gangs can only hire Outlaw Hangers-on, Brutes and Hired Guns.
+			\item All fighters in an Outlaw gang have a bounty.
+		\end{itemize}
+	\end{multicols}
+	House gangs that become Outlaws are unable to hire specific Brutes, Exotic pets or Hangers-on. (They keep any they currently own, however non house Hangers-on leave).
 \end{document}
-
