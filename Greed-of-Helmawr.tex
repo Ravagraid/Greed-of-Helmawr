@@ -4,14 +4,16 @@
 \usepackage[nohead, nomarginpar, margin=1in, foot=.25in]{geometry}
 \usepackage{tabularray}
 \usepackage{multicol}
+\usepackage[none]{hyphenat}
+\usepackage[T1]{fontenc}
+\usepackage{arev}
 
 \setlength{\parskip}{\baselineskip}%
-\setlength\columnseprule{.5pt}
 
- 	\title{Greed Of Helmawr}
- 	\author{}
- 	\date{}
- 	\pagenumbering{arabic}
+	\title{Greed Of Helmawr}
+	\author{}
+	\date{}
+	\pagenumbering{arabic}
 
 \begin{document}
 	\maketitle
@@ -20,7 +22,6 @@
 
 	This is a Law \& Misrule campaign as defined in the Book Of Judgement, with the following exceptions;
 	\begin{itemize}
-		\item No Brutes.
 		\item No Vehicles.
 		\item No unique characters (Dramatis Personae).
 		\item No Alliances.
@@ -30,7 +31,7 @@
 	The following is a table of gangs that are approved for use in this campaign. Gangs marked with an asterisk are approved at the discretion of the Arbitrator.
 
 
-	\begin{tabular}{c c c c}
+	\begin{tblr}{c c c c}
 		House Gangs    & Enforcers          & Cults             & Others \& Outsiders        \\
 		\hline
 		\rule{0pt}{3ex}
@@ -41,10 +42,15 @@
 		House Orlock   	&                    &                   & Venators*                  \\
 		House Van Saar 	&                    &                   & Spyre Hunters              \\
 						&                    &                   & Malstrain Genestealers
-	\end{tabular}
+	\end{tblr}
 	\pagebreak
 	\section*{Campaign Layout}
 	The Law and Misrule Campaign is based around gangs fighting battles for the control of Rackets in their area of the hive. Each game in the campaign is fought for the control of a Racket, with the winner either gaining a new Racket, or holding onto one that they already have. In this campaign, there are a fixed number of Rackets, based on the number of players.
+
+	\subsection*{Cycle Structure}
+	Over the course of each cycle, players are expected to play at least one game, with a maximum of two games per cycle, not including a Rescue Mission should one be required. This will involve an outgoing, and an incoming challenge.
+
+	Should a Rescue Mission be required, income and other rewards are not generated in the post-battle sequence, but XP is gained as normal.
 
 	\subsection*{The Rule of Law, and the Path of the Outlaw}
 	At the start of the campaign, each gang must declare their alignment, and note it down on their roster. The alignment of a gang can change over the course of the campaign as a consequence of actions and choices made by the player of the gang. The table below details the alignment of the different gangs and how they may change:
@@ -61,7 +67,7 @@
 		\textbf{Gang Type}				& \textbf{Starting Alignment} & \textbf{Switched Alignment} &  \\
 		All House Gangs 				& Law Abiding                 & Outlaw                      &  \\
 										& Outlaw                      & Law Abiding                 &  \\
-		{Chaos and\\Corpse Grinders} 	& Outlaw                      & N/A                         &  \\
+		Chaos and Corpse Grinders	 	& Outlaw                      & N/A                         &  \\
 		Genestealer Cults				& Law Abiding                 & Outlaw                      &  \\
 										& Outlaw                      & Law Abiding                 &  \\
 		Enforcers						& Law Abiding                 & N/A                         &  \\
@@ -76,18 +82,17 @@
 	\end{tblr}
 	\end{center}
 	\vspace{1em}
+	\begin{center}
 	\begin{multicols}{2}
-		\subsubsection*{Effects of being a Law Abiding Gang}
+		\subsubsection*{Law Abiding Gangs}
 		\begin{itemize}
 			\item Law Abiding gangs may claim bounties on captured Outlaw fighters, equal to their full value. This is after a Rescue Mission has been attempted.
 			\item Law Abiding Gangs may trade captives with other Law Abiding gangs, but not with Outlaw gangs.
 			\item Law Abiding gangs may hire Hangers-on, Brutes, or Hired guns that do not have the Outlaw rule.
 			\item Law Abiding gangs may purchase items that are Illegal with a -4 Availability modifier.
 		\end{itemize}
-
 		\columnbreak
-
-		\subsubsection*{Efects of being an Outlaw Gang}
+		\subsubsection*{Outlaw Gangs}
 		\begin{itemize}
 			\item Outlaw gangs cannot claim bounties or sell captives, but they can dispose of them (removing them from the campaign). This is after a Rescue Mission has been attempted.
 			\item Outlaw gangs may trade captives with any other gang.
@@ -95,5 +100,67 @@
 			\item All fighters in an Outlaw gang have a bounty.
 		\end{itemize}
 	\end{multicols}
-	House gangs that become Outlaws are unable to hire specific Brutes, Exotic pets or Hangers-on. (They keep any they currently own, however non house Hangers-on leave).
+	\end{center}
+	\pagebreak
+	\subsection*{Infamy And Duty}
+
+	REWARD TABLE BASED ON REP FOR EACH ALIGNMENT GOES HERE
+
+	\subsection*{Changing Alignment}
+
+	A gang may declare that they are changing their alignment once during the campaign. The alternate way a gang may change alignments is by being forced to do so, such as by failing the Alignment test associated with Intrigues, which will be explained in a later section.
+
+	House gangs that become Outlaws are unable to hire house specific Brutes, Exotic pets or Hangers-on. When a gang changes alignment, the gang immediately suffers a loss of 3 Reputation and loses the boons associated with their former alignment. Furthermore, any Hangers-On the gang has, leaves. Gangs that cannot change alignment lose 5 Reputation.
+	\pagebreak
+	\section*{Founding a gang}
+	Players are given a starting pool of 1000 credits to spend on gang members and equipment found in their relevant gang listings; these rules can be found in the various Necromunda books or online via the NecroVox site.
+
+	Players are required to have submitted their gang list to the Arbitrator for approval by 19/08/2024 (sooner is better). Lists can be submitted via a link to Yaktribe, or handing a physical copy of the list over. The campaign will be using yaktribe to update information for players gangs as the campaign progresses.
+
+	\subsection*{Gang Tactics}
+	At gang creation, players create a pool of Gang Tactics by selecting a total of 18 gang tactics from either their faction specific book, or from the table below;
+	\begin{center}
+		\tiny
+		\begin{tblr}{
+			width = \linewidth,
+			colspec = {Q[83]Q[237]Q[585]Q[25]},
+			cell{1}{1} = {c},
+			cell{1}{2} = {c},
+			cell{1}{3} = {c},
+			hline{2} = {1-3}{},
+		}
+			Name                 & Timing                                                                                                          & Effect                                                                                                                                                                                                                                                                                                                      &  \\
+			...Click             & Play this gang tactic after an enemy model has completed a shoot (basic) action after fully resolving any hits. & The weapon that was used to make the shoot (basic) action immediately runs Out of Ammo as if it failed an Ammo test.                                                                                                                                                                                                        &  \\
+			Lucky Find           & Play this gang tactic when activating a model with at least one weapon Out of Ammo.                             & One of the model’s weapons is automatically reloaded, no Ammo test is needed.                                                                                                                                                                                                                                               &  \\
+			Suppressing Fire     & Play this after a friendly model fails to hit with a shoot (basic) action.                                      & The target of the shoot (basic) action is placed prone and pinned.                                                                                                                                                                                                                                                          &  \\
+			Beast Lure           & Play this gang tactic when activating a friendly fighter.                                                       & For the remainder of the turn the fighter may perform a Beast Lure (basic) action.Beast Lure (basic): Place a Beast Lair maker within 3” of this fighter and then move the fighter up to D6”.                                                                                                                               &  \\
+			{Burst of\\Courage}     & Play this gang tactic when making a cool test for a model, before the dice are rolled.                          & For the duration of the round, the model passes any cool test they are required to make. No dice are rolled.                                                                                                                                                                                                                &  \\
+			Adrenaline Surge     & Play this when activating a friendly fighter.                                                                   & The fighter may perform an additional action this activation.                                                                                                                                                                                                                                                               &  \\
+			Desperate Effort     & Play this tactic if it is your turn to activate and none of your models have ready markers.                     & Pick a friendly fighter and activate them as if they had a ready marker. At the end of the activation they are automatically placed prone and pinned.                                                                                                                                                                       &  \\
+			Combat Drugs         & Play this when activating a friendly fighter.                                                                   & For the duration of the round, increase the fighter’s attacks by D3. However should the roll be a natural 6, the fighter suffers a flesh wound at the end of their activation.                                                                                                                                              &  \\
+			You!                 & Play this when activating a friendly fighter.                                                                   & Choose an enemy model within line of sight of this fighter. For the duration of the battle, any attacks made by this fighter against the chosen enemy model apply a +1 modifier to the wound roll. Until the enemy is taken out of action, this fighter may not attack any other model.                                     &  \\
+			Opening Volley       & Play before the first round before rolling for priority.                                                        & Up to three friendly fighters may perform a shoot (basic) action. Note they may not perform this action if it would be a simple or double action for any reason.                                                                                                                                                            &  \\
+			Forward Planning     & Play before the first round before rolling for priority.                                                        & Up to three friendly fighters may immediately perform a move (simple) action.                                                                                                                                                                                                                                               &  \\
+			Grenade Bouquet      & Play when a friendly fighter makes an attack with a weapon that has grenade and blast (X”) traits.              & The fighter makes three attacks instead of one, though each of these attacks will automatically miss and scatter. After the attacks have been resolved the grenades automatically run out of ammo.                                                                                                                          &  \\
+			Beast Repellent      & Play this gang tactic when activating a friendly fighter                                                        & For the duration of this fighter’s activation, they do not risk rousing the Beast, regardless of how close they are to the Beast’s lair.                                                                                                                                                                                    &  \\
+			Reload!              & Play this at the start of any end phase                                                                         & Every friendly model may perform an immediate free Reload (simple) action.                                                                                                                                                                                                                                                  &  \\
+			Group Tactics        & Play this gang tactic instead of activating a model                                                             & Activate up to three friendly fighters in turn, each fighter must perform the same action(s).                                                                                                                                                                                                                               &  \\
+			Chain Attack         & Play this gang tactic after a friendly fighter has taken an enemy fighter out of action with a melee attack.    & The fighter may immediately perform a free Charge (double) action, moving D6” instead of their movement + D3”.                                                                                                                                                                                                              &  \\
+			Thundering Charge    & Play this tactic when a friendly fighter activates                                                              & If the fighter performs a Charge (double) action during this activation, instead of adding D3” to the distance moved they may double their movement characteristic.                                                                                                                                                         &  \\
+			Blood Debt           & Play this when a friendly fighter is taken out of action by an enemy fighter’s action.                          & For the rest of the battle, all friendly models apply a +1 bonus to hit when targeting the enemy fighter.                                                                                                                                                                                                                   &  \\
+			Last Gasp            & Play this when a friendly fighter is taken out of action                                                        & Before the fighter is removed from play, they may perform either a free Shoot (basic), or Fight (basic) action.                                                                                                                                                                                                             &  \\
+			Reaction Fire        & Play this gang tactic when an enemy model activates, before they perform any basic actions.                     & A friendly fighter may immediately perform a Shoot (basic) action targeting the enemy model. This does not remove their Ready Marker if they have one.                                                                                                                                                                      &  \\
+			Lucky Lho-stick Case & Play this gang tactic after a friendly fighter has failed an armour save.                                       & The fighter may re-roll the failed armour save, treating the Ap of the hit as -.                                                                                                                                                                                                                                            &  \\
+			Proper Preparation   & Play this before either player deploys their gang.                                                              & One friendly fighter’s weapons all gain the Plentiful trait, unless they have the Scarce trait in which case they lose the Scarce trait.                                                                                                                                                                                    &  \\
+			Trusty Backup        & Play this when activating a friendly fighter.                                                                   & For the duration of the battle, the fighter is considered to have an additional stub gun.                                                                                                                                                                                                                                   &  \\
+			Having a bad day     & Play this gang tactic at the start of the first round before rolling Priority.                                  & Choose an enemy Leader or Champion. For the duration of this battle any Cool tests made by enemy models while within 3” of the chosen fighter are made with a -2 modifier.                                                                                                                                                  &  \\
+			Battle Madness       & Play this tactic instead of activating a model.                                                                 & Choose a Broken fighter belonging to either gang. If they are Standing and Active, they may immediately make a ranged attack against the closest model, friend or foe, that they can see. If they are Standing and Engaged, they immediately perform a Fight (basic) against a random enemy fighter they are engaged with.
+		\end{tblr}
+	\end{center}
+	\pagebreak
+
+	\section*{Trading Post and Recruitment}
+	The nature of the campaign is centered on the reconstruction of an already ruined hive over a number of years, with each cycle representing a substantial amount of time where house gangs and other factions vie for power within the fledgling industries.
+
+	In order to represent these early years where the rare and esoteric wouldn't be available, there is a maximum Availability value that can be rolled for. For Cycle 1 this value is 8, for Cycle 2 it's 10, for Cycle 3 and beyond there is no maximum.
 \end{document}
